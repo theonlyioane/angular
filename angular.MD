@@ -4,16 +4,16 @@ Angular Notes
 For extending HTML
 -----------
 
-# ng-app="" 
+### ng-app="" 
 > directive that tells angular that the element is the owner of the angular JS application
 >> used for init angualar on a page. Used on the pages parent div
  
-# ng-model="example" 
+### ng-model="example" 
 > binds the value of the input field to the application variable name
 >> ties the html element to the angualar variable
 >> input
  
-# ng-bind="example" 
+### ng-bind="example" 
 > binds the innerHTML of the element to the application variable name
 >> outputs that angualr variable
  
@@ -30,10 +30,10 @@ For extending HTML
 Expressions
 -----------
 
-# {{example}}
+### {{example}}
 > expressions are written inside of double braces
     
-# ng-bind="expression"
+### ng-bind="expression"
 > can also be written inside of a directive
 
 <div ng-app="">
@@ -62,10 +62,10 @@ Expressions
 Angular applications
 -----------
 
-# Module : module defines applications
+### Module : module defines applications
 > var app = angular.module('myApp', []);
 
-# Controller : controls applications
+### Controller : controls applications
 
 app.controller('myCtrl', function($scope) {
 $scope.firstName= "John";
