@@ -6,19 +6,16 @@
     <title>Document</title>
 </head>
 <body>
-   <div ng-app="myApp" ng-controller="myCtrl">
-      <h1>Applications / Controllers</h1>
-        <p>First Name: <input type="text" ng-model="firstName"></p>
-        <p>FLast Name: <input type="text" ng-model="lastName"></p>
-       <br>
-       <p>Full Name: {{firstName + " " + lastName}}</p>
-    </div>
-    <script>
-        var app = angular.module('myApp', []);
-        app.controller('myCtrl', function($scope) {
-            $scope.firstName = "John";
-            $scope.lastName = "Smith";
-        });
-    </script>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+    Name: <input ng-model="name" type="text">
+</div>
+
+<script>
+    var app = angular.module('myApp', []);
+    app.controller('myCtrl', function($scope){
+        $scope.name= "John Smith";
+    })
+</script>
 </body>
-</html>
+</html>  
